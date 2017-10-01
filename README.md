@@ -1,2 +1,2 @@
-# website
+# Website
 RactStudio's main website. Bootstrap 4 based modern HTML5 Landing page...
