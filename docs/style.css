@@ -1,0 +1,201 @@
+/* Author: RactStudio
+   URI: http://studio.ractbd.com
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body, 
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 18px;
+}
+
+body {
+    line-height: 2;
+    color: #444;
+    background: #ededed;
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+iframe {
+    max-height: 100%;
+}
+
+img {
+    height:auto;
+}
+
+.btn {background:#e0edf9;color:#fff;
+
+		-webkit-transition: all 250ms;
+        -moz-transition: all 250ms;
+        -o-transition: all  250ms;
+        transition: all  250ms;
+		
+		}
+		
+.btn:hover {background:#333; }
+
+.btn-download { border-radius:0 4px 0 0; font-weight:bold; width: 25px;  overflow: hidden;}
+
+.btn-download  img {  width: 25px;
+  float: left;
+  margin-top: 18px;
+  margin-right: 15px
+  }
+ 
+.btn-download:hover { width:165px;} 
+
+iframe {
+    border: 0 !important;
+}
+
+.wrapper { margin:20px 40px ; border-radius:4px; box-shadow:0 0 2px 2px rgba(155,155,155,0.1); border:1px solid #d3d3d3;}
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    max-width: 650px;
+    position: relative;
+}
+
+strong, dt, h3, h4 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+
+
+h1,
+h2,
+h3 {
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 24.5px;
+}
+
+h4 {
+    font-size: 17.5px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 11.9px;
+}
+
+hr {
+    background: #EEE;
+    border: 0;
+    height: 1px;
+    margin: 40px 0 40px;
+}
+
+blockquote {
+    margin: 1em 0;
+    border-left: 3px solid #ccc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+
+
+dt {
+}
+
+dd {
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+a {
+    -webkit-transition: all ease 150ms;
+    -moz-transition: all ease 150ms;
+    -o-transition: all ease 150ms;
+    transition: all ease 150ms;
+    text-decoration: none;
+    color: #26abe2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #47b5e2;
+}
+
+/* Header Styles */
+
+header {
+    padding: 2em 0 2em 0; 
+    
+    background: #add67e; /*old color=#363f48 */
+    color: #fff;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+header h2 {
+    margin: 0 0 1em 0;
+}
+
+header h2.lone-header {
+    margin: 0;
+	padding: 0 10px 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+	background:#fff;
+	border-radius:0 0 4px 4px;
+}
+
+footer p {
+    margin: 0;
+    color: #999;
+}
+
+.pull-right{ float:right;}
+.pull-left { float:left; }
