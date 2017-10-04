@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -415,8 +416,25 @@ input:focus {
         padding-left: 310px;
     }
 
+    .docs-content pre > img {
+        margin-left:-200px;
+		font-size: 16px;
+		font-weight:500;
+    }
 
+    .docs-content pre > a {
+        margin-left:-200px;
+		font-size: 16px;
+		font-weight:500;
+    }
 
+    .docs-content p {
+        text-align: justify;
+		text-justify: inter-word;
+    }
+
+	
+	
     header {
         padding: 1em 0 1em 0; 
     }
