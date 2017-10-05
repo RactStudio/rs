@@ -1,0 +1,202 @@
+/*******************************/
+/* Spidoche Tube reset*/
+/*******************************/
+
+.spidochetubeDemo,
+.spidochetubeDemo div,
+.spidochetubeDemo li,
+.spidochetubeDemo ul,
+.spidochetubeDemo p,
+.spidochetubeDemo a {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*******************************/
+/* Spidoche navigation*/
+/*******************************/
+
+#spidochetubeDemo_nav {
+    margin: auto;
+    padding-top: 10px;
+    clear: both;
+}
+#spidochetubeDemo_nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+}
+#spidochetubeDemo_nav a:hover {
+    color: #2FB48B;
+    border-color: #93CAB9
+}
+#spidochetubeDemo_nav a.spidochetubeDemo_next {
+    float: left;
+    padding: 3px 8px 3px 5px;
+}
+#spidochetubeDemo_nav a.spidochetubeDemo_prev {
+    float: right;
+    padding: 3px 5px 3px 8px;
+}
+#spidochetubeDemo_nav a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+#spidochetubeDemo_nav a {
+    background: #EFF1F5;
+    border-radius: 4px;
+    border: 1px solid #CFD5DD;
+    box-shadow: 0 1px 1px white;
+    text-shadow: 0 1px 1px white;
+}
+
+
+/*******************************/
+/* Spidoche Tube Mininal Style */
+/*******************************/
+
+/* CONTAINER */
+.spidochetubeDemo {
+    margin: auto;
+}
+.spidochetubeDemo .spidochetubeDemo_inner {
+    width: 100%;
+    background-color: #FFF;
+    float: left;
+    padding-bottom: 30px;
+    border: 1px solid #CFD5DD;
+}
+
+/* PLAYER */
+.spidochetubeDemo #spidochetubeDemo_player {
+    border-bottom: #fff solid 1px;
+    background: #CFD5DD;
+    padding: 10px 0;
+    background: #5B6674;
+}
+#spidochetubeDemo_player #player {
+    margin: 15px auto;
+    width: 93%;
+    display: block;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, .5);
+}
+
+/* PLAYLIST */
+#spidochetubeDemo_list {
+    margin: auto;
+    padding: 20px 2% 0 2%;
+    float: left;
+    width: 96%;
+    margin-bottom: 20px;
+}
+.spidochetubeDemo #spidochetubeDemo_list li {
+    float: left;
+    width: 23%;
+    padding: 22px 0 10px 0;
+    list-style: none;
+    background-color: #EFF1F5;
+    margin: 6px 1%;
+    border: 1px solid #CFD5DD;
+    box-sizing: border-box;
+    border-radius: 1px;
+    margin-bottom: 15px;
+}
+.spidochetubeDemo #spidochetubeDemo_list li:hover {
+    border-color: #5B6674;
+}
+.spidochetubeDemo #spidochetubeDemo_list li a {
+    padding: 0 10px;
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 1px #fff;
+    display: block;
+}
+.spidochetubeDemo #spidochetubeDemo_list li a:hover {
+    color: #000000;
+}
+.spidochetubeDemo #spidochetubeDemo_list li img {
+    width: 100%
+}
+.spidochetubeDemo #spidochetubeDemo_list li a span {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+.spidochetubeDemo #spidochetubeDemo_list li.spidochetubeDemo_current {
+    background: #3A495E;
+    background: #5B6674;
+}
+.spidochetubeDemo #spidochetubeDemo_list li.spidochetubeDemo_current a {
+    color: #eee;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #2A4234;
+}
+#spidochetubeDemo_loadmore {
+    display: block;
+    clear: both;
+    width: 90px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Sans-serif;
+    font-size: 12px;
+    padding: 10px 5px;
+    background-color: #EFF1F5;
+    border-radius: 3px;
+    color: #6A6A6A;
+    border: 1px solid #CFD5DD;
+}
+#spidochetubeDemo_loadmore:hover {
+    border-color: #5B6674;
+}
+
+
+/*******************************/
+/* MEDIAQUERIES */
+/*******************************/
+
+@media (max-width:640px) {
+    .spidochetubeDemo #spidochetubeDemo_list li {
+        width: 31.33%;
+    }
+}/* max-width:640px */
+
+@media (max-width:480px) {
+    .spidochetubeDemo #spidochetubeDemo_list li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .spidochetubeDemo #spidochetubeDemo_list li img {
+        width: 90px;
+        display: table-cell;
+        padding: 5px 10px;
+    }
+    .spidochetubeDemo #spidochetubeDemo_list li a span {
+        display: table-cell;
+        vertical-align: middle;
+        overflow: inherit;
+        white-space: inherit;
+        padding: 4px 1%;
+    }
+    .spidochetubeDemo #spidochetubeDemo_list li a {
+        display: table;
+        margin: 0;
+        padding: 0;
+        text-shadow: none;
+    }
+    #spidochetubeDemo_list {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 0;
+        width: 100%;
+    }
+}/* max-width:480px */
