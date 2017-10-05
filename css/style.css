@@ -1,4 +1,3 @@
-
 body, html {
     margin: 0;
     padding: 0;
@@ -131,7 +130,6 @@ blockquote {
 }
 
 
-
 dt {
 }
 
@@ -229,7 +227,8 @@ nav h1 a {
 	color: #000;
 }
 
-nav h1 a img {   margin-right: 10px;
+nav h1 a img {
+  margin-right: 10px;
   float: left;
   margin-top: 9px;
   }
@@ -295,8 +294,6 @@ nav #menu-toggle {
 }
 
 
-
-
 /* Content Styles */
 section { padding: 1em 0 3em; text-align: center; }
 section.vibrant { background: #222; color: #fff; }
@@ -319,7 +316,6 @@ section:after {
 
 nav:after, header:after, section:after  { clear: both; }
 nav, header, section { *zoom: 1; }
-
 
 
 /* Form Styles */
@@ -347,11 +343,6 @@ input:focus {
     border-color: #007eb2;
     outline: 0;
 }
-
-
-
-
-
 
 
 .docs-nav {
@@ -455,6 +446,39 @@ input:focus {
         display: inline-block;
     }
 
+}
 
 
+.screenshot-gallery {
+  width: 100%;
+  float: left;
+}
+.screenshot-gallery img {
+  width: 100%;
+  height: auto;
+}
+.screenshot-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 180px;
+}
+.screenshot-gallery figure:hover {
+  color:#2196F3;
+}
+.screenshot-gallery figure > a > img  {
+  border:5px solid #efefef;
+  border-radius:5px;
+  height:280px;
+}
+.screenshot-gallery figure > a > img:hover  {
+  border:5px solid #ccc;
+}
+.screenshot-gallery figcaption {
+  font-size:13px;
+  font-weight:300;
+  text-align:center;
+}
+.screenshot-gallery figcaption:hover {
+  font-weight:500;
 }
