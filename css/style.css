@@ -469,7 +469,7 @@ input:focus {
 .screenshot-gallery figure > a > img  {
   border:5px solid #efefef;
   border-radius:5px;
-  height:280px;
+  height:240px;
 }
 .screenshot-gallery figure > a > img:hover  {
   border:5px solid #ccc;
