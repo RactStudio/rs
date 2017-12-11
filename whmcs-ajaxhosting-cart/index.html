@@ -412,9 +412,9 @@ That's it. <strong>Installation Complete</strong>.
       <h2 style="font-weight:500;"> Demo Videos <a title="Direct Link for Demo Videos Section" href="#demo_videos" target="_blank"><img src="/img/link.png" alt="link" width="20"></a></h2>
       <p> We created few videos for demo of our <strong>AJAX Hosting Cart - WHMCS Order Form Template</strong> to show live action of our product.<br>
 		
-	  <div id="demo_videos_youtube" class="spidochetubeDemo"></div>
+	<div id="demo_videos_youtube" class="spidochetubeDemo"></div>
 	      
-	      <br/>&nbsp;
+	&nbsp;
 	  
 	</p>
 	  
@@ -479,17 +479,12 @@ Please follow below sections for <strong>more ADVANCED customization</strong>. O
 	  
       <h2 style="font-weight:500;"> Customizable Design <a title="Direct Link for Customizable Design Section" href="#customizable_design" target="_blank"><img src="/img/link.png" alt="link" width="20"></a></h2>
 	  
-      <p> <strong>WHMCS AJAX Hosting Cart Order Form</strong> template having 3-8 different variations of design to show itself on the products pricing chart page. But 3 different kinds of design are hidden. If you want to use those 3 designs you need to edit <pre>products.tpl file at line 66 and/or 68</pre> div class code and add <pre>.alert</pre> CSS class. You can't use all three designs at the same time. You can use only one design at a time.
-<br><br>
-<strong>Tips and Tricks:</strong><br>
-Let's say; you have two product group. Then, you can copy the cart template and rename with two names and upload both of them inside whmcs installation directory
-<pre class="prettyprint prettyprinted">
-	<strong>WHMCS root installaion direcory > templates > orderforms > upload our templates here</strong></pre>
-make sure to add <pre>.alert</pre> CSS class any one of them template <pre>products.tpl file at line  66 and/or 68</pre> before upload on the (orderforms) directory. Add any one of them as default cart template from
-<pre class="prettyprint prettyprinted">
-	<strong>admin > general settings > ordering tab</strong></pre>
-whmcs admin area settings. And, the final stage is when you add product group. Just choose from any of the uploaded templates from <strong>Default Order Form Template</strong> selection.
-<br>
+      <p> <strong>AJAX Hosting Cart - WHMCS Order Form Template</strong> has 8+ different variations of design to show itself on the products pricing chart page. But 4 different kinds of design are hidden. If you want to use those 4 designs you need to edit
+	<pre>products.tpl file</pre>
+	You can't use all designs at the same time. You can use only one design at a time.
+<br/><br/>
+.......
+<br/>
 <text style="color:orange;font-weight:500;">Note: Please follow below video tutorials for change the pricing chart design from <a href="#video_tutorials">here</a>.</text><br>
           </p>
 	  
@@ -499,20 +494,30 @@ whmcs admin area settings. And, the final stage is when you add product group. J
 	  
       <h2 style="font-weight:500;"> Changeable Colors <a title="Direct Link for Changeable Colors Section" href="#changeable_colors" target="_blank"><img src="/img/link.png" alt="link" width="20"></a></h2>
 	  
-      <p> <strong>WHMCS Hosting Cart Order Form</strong> having <strong>100+ colors</strong> in it. You can customize. Following file contain all color code.
+      <p> <strong>AJAX Hosting Cart - WHMCS Order Form Template</strong> has <strong>100+ colors</strong> in it. You can customize them very easily. Following file contain all color code.
 <br>
 <pre class="prettyprint prettyprinted">
 	<strong>css > style.css
 	and / or
-	css > styles.min.css</strong></pre>
+	css > style.min.css</strong></pre>
 <br>
 We are using <pre>style.min.css</pre> for file compression cause. In case if you change anything in the <pre>style.css</pre> file it will not work. You have to change it on the <pre>style.min.css</pre> file.
 <br><br>
-All color code are using class <pre>.rs-color-{1 to 111 auto generated numbers}</pre> Let's say, if you change the color inside from <pre>.rs-color-3</pre> to another color then it will change everywhere we used the <pre>.rs-color-3</pre> <strong>CSS classes</strong>.
+All color code are using class <pre>.rs-color-{1 to 100 auto generated numbers}</pre> Let's say, if you change the color inside from <pre>.rs-color-3</pre> to another color then it will change everywhere we used the <pre>.rs-color-3</pre> <strong>CSS classes</strong>.
 <br>
-Moreover, Inside your any product groups you can add <strong>111+</strong> product with color support. From the <strong>112</strong> product on any group, you will see <strong>no color</strong> at all. It means, just normal <strong>black text and white background color</strong>. Those black texts and white background color are also gorgeous.
-<br><br>
-<text style="color:orange;font-weight:500;">Note: Please watch video tutorials <a href="#video_tutorials">here</a> for more understanding.</text><br>
+Moreover, Inside your any product groups you can add <strong>100+</strong> product with color support. From the <strong>101</strong> product on any group, you will see <strong>no color</strong> at all. It means, just normal <strong>black text and white background color</strong>. Those black texts and white background color are also gorgeous.
+<br/><br/>
+	<h2 id="OneColorGroupsProducts" style="font-weight:500;">One Color for Groups of Products</h2>
+	      Normally, you can just open
+	      <br/><strong>products.tpl</strong><br/>
+	      and customize the text from<br/>
+		<div class="image clearfix">
+			<img alt="" src="img/OneColorGroupsProducts.png">
+		</div>
+	      <br/>Line:74 and 78<strong>rs-color-{$product@iteration}<br/></strong><br/> remove <strong><em>{$product@iteration}</em></strong> text<br/>and write any number <strong><em>1 to between 100</em></strong>. Also, you can change colors from <strong><em>1 to 100</em></strong> between classes from 
+	      <br/><strong>style.css</strong> file.<br/> If you change any text from <em>style.css</em> then, please don't forget to <strong>minify</strong> the code and update the minify code inside <strong><em>style.min.css</em></strong> file.
+	      
+<text style="color:orange;font-weight:500;">Note: Please watch video tutorials <a href="#video_tutorials">here</a> for more understanding.</text><br/>
           </p>
 	  
       </div>
