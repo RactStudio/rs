@@ -358,6 +358,56 @@
 		</svg>
 	</div>
 	
+
+	<!-- Include HTML File -->
+	<script>
+		function loadHtmlFiles() {
+		// Get all div tags with rs-include-html attribute
+		const includeHtmlDivs = document.querySelectorAll("[rs-include-html]");
+	
+		// Loop through each div tag
+		for (let i = 0; i < includeHtmlDivs.length; i++) {
+			// Get the value of rs-include-html attribute
+			const htmlFile = includeHtmlDivs[i].getAttribute("rs-include-html");
+	
+			// Create an XMLHttpRequest object
+			const xhr = new XMLHttpRequest();
+	
+			// Set the response type to "document" to treat the response as an HTML document
+			xhr.responseType = "document";
+	
+			// Add an event listener for when the request is completed
+			xhr.onload = function() {
+			// Check if the request was successful
+			if (xhr.status === 200) {
+				// Get the response as an HTML document
+				const htmlDoc = xhr.response;
+	
+				// Get the content of the HTML document
+				const htmlContent = htmlDoc.documentElement.innerHTML;
+	
+				// Replace the div tag's content with the loaded HTML content
+				includeHtmlDivs[i].outerHTML = htmlContent;
+	
+				// Recursively call the function to load nested HTML files
+				loadHtmlFiles();
+			}
+			};
+	
+			// Open the XMLHttpRequest with the htmlFile as the URL
+			xhr.open("GET", htmlFile, true);
+	
+			// Send the request
+			xhr.send();
+		}
+		}
+	
+		// Call the function when the page loads
+		window.onload = function() {
+		loadHtmlFiles();
+		};
+	</script>
+	
 	<!-- Light / Dark Mode and Scroll Top with Progress -->
 	<script type="text/javascript">
 	(function($) { "use strict";
