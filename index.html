@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <!--
-  * RactDocs v1.0.0 ( https://docs.ractstudio.com/ )
-  * File Version: v1.0.0
+  * RactDocs v2.0.0 ( https://docs.ractstudio.com/ )
+  * File Version: v2.0.0
   * First Introduced: 22 June, 2019
-  * Last Updated:  22 June, 2019
+  * Last Updated:  April, 2023
   * Contact us at ractstudio@gmail.com (+8801734998405)
-  * Copyright 2019 The RactStudio Authors (https://ractstudio.com/ ; Mahmudul Hasan Rubel)
+  * Copyright 2023 The RactStudio Authors (https://rubel.ractstudio.com/ ; Mahamudul Hasan Rubel)
   * Licensed under RactStudio ( https://ractstudio.com/legal/ )
   * File Type: Main - Index / Home
   * Packages: index.html
@@ -91,6 +91,37 @@
     <!--  PLUGINS - BootStrap's third party JS! -->
     <script src="/assets/js/popper.min.js" rel="text/javascript"></script>
 	
+	<!-- Include HTML File -->
+	<script>
+		function includeHTML(htmlFile) {
+		  var z, i, elmnt, file, xhttp;
+		  /*loop through a collection of all HTML elements:*/
+		  z = document.getElementsByTagName("*");
+		  for (i = 0; i < z.length; i++) {
+			elmnt = z[i];
+			/*search for elements with a certain attribute:*/
+			file = elmnt.getAttribute(htmlFile);
+			if (file) {
+			  /*make an HTTP request using the attribute value as the file name:*/
+			  xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+				if (this.readyState == 4) {
+				  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+				  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+				  /*remove the attribute, and call this function once more:*/
+				  elmnt.removeAttribute("w3-include-html");
+				  includeHTML();
+				}
+			  }      
+			  xhttp.open("GET", file, true);
+			  xhttp.send();
+			  /*exit the function:*/
+			  return;
+			}
+		  }
+		};
+		</script>
+
 	<!-- Products List additional styles -->
 	<style type="text/css">
 		.rs-config-box {
@@ -409,11 +440,16 @@
 	<noscript>Your browser does not support JavaScript!</noscript>
 
 	<!-- header -->
-	<?php include 'header.php';?>
+	<div w3-include-html="header.html"></div> 
+	<script>includeHTML("header.html");</script>
+
 	<!-- main -->
-	<?php include 'main.php';?>
+	<div w3-include-html="main.html"></div> 
+	<script>includeHTML("main.html");</script>
+	
 	<!-- right -->
-	<?php include 'footer.php';?>
+	<div w3-include-html="footer.html"></div> 
+	<script>includeHTML("footer.html");</script>
 	
 	<!-- Light / Dark Mode Switch -->
 	<div class="switch">
