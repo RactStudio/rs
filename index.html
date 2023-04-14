@@ -109,7 +109,7 @@
 				  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
 				  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
 				  /*remove the attribute, and call this function once more:*/
-				  elmnt.removeAttribute("w3-include-html");
+				  elmnt.removeAttribute("rs-include-html");
 				  includeHTML();
 				}
 			  }      
@@ -440,16 +440,13 @@
 	<noscript>Your browser does not support JavaScript!</noscript>
 
 	<!-- header -->
-	<div w3-include-html="header.html"></div> 
-	<script>includeHTML("header.html");</script>
+	<div rs-include-html="header.html"></div>
 
 	<!-- main -->
-	<div w3-include-html="main.html"></div> 
-	<script>includeHTML("main.html");</script>
+	<div rs-include-html="main.html"></div>
 	
 	<!-- right -->
-	<div w3-include-html="footer.html"></div> 
-	<script>includeHTML("footer.html");</script>
+	<div rs-include-html="footer.html"></div>
 	
 	<!-- Light / Dark Mode Switch -->
 	<div class="switch">
@@ -462,6 +459,8 @@
 			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
 		</svg>
 	</div>
+	 
+	<script>includeHTML();</script>
 	
 	<!-- Light / Dark Mode and Scroll Top with Progress -->
 	<script type="text/javascript">
