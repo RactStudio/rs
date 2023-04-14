@@ -93,14 +93,14 @@
 	
 	<!-- Include HTML File -->
 	<script>
-		function includeHTML(htmlFile) {
+		function includeHTML() {
 		  var z, i, elmnt, file, xhttp;
 		  /*loop through a collection of all HTML elements:*/
 		  z = document.getElementsByTagName("*");
 		  for (i = 0; i < z.length; i++) {
 			elmnt = z[i];
 			/*search for elements with a certain attribute:*/
-			file = elmnt.getAttribute(htmlFile);
+			file = elmnt.getAttribute();
 			if (file) {
 			  /*make an HTTP request using the attribute value as the file name:*/
 			  xhttp = new XMLHttpRequest();
@@ -461,7 +461,7 @@
 	</div>
 	 
 	<script>includeHTML();</script>
-	
+
 	<!-- Light / Dark Mode and Scroll Top with Progress -->
 	<script type="text/javascript">
 	(function($) { "use strict";
