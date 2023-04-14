@@ -1,0 +1,25 @@
+.lato {
+    font-family: 'Lato', sans-serif
+}
+
+html,
+body {
+    color: #505050;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.lato {
+    font-family: 'Lato', sans-serif
+}
+
+.jplist-hidden {
+    display: none
+}
+
+h1 {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    padding: 0 0 15px 0;
+    color: #f03800;
+    text-shadow: 1px 1px 1px #fff
+}
